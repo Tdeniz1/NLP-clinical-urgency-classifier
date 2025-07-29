@@ -1,0 +1,6 @@
+pandas
+scikit-learn
+nltk
+spacy
+tqdm
+!pip freeze > requirements.txt
