@@ -1,8 +1,7 @@
-pandas
-scikit-learn
-nltk
-spacy
-tqdm
 streamlit==1.31.1
-matplotlib
-seaborn
+pandas==1.5.3
+scikit-learn==1.2.2
+nltk==3.8.1
+numpy==1.23.5
+matplotlib==3.5.3
+seaborn==0.12.2
