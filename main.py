@@ -1,6 +1,8 @@
 import os
-st.write("Current files in working directory:")
+import streamlit as st
+st.write("Debug: Current working directory listing:")
 st.write(os.listdir())
+
 import streamlit as st
 import pandas as pd
 import numpy as np
