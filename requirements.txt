@@ -4,3 +4,6 @@ nltk
 spacy
 tqdm
 !pip freeze > requirements.txt
+streamlit==1.31.1
+matplotlib
+seaborn
