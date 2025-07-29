@@ -70,9 +70,10 @@ Main libraries used:
 
 Follow these steps to run the classifier from start to finish:
 
+```python
 # 1. Load the dataset
 import pandas as pd
-df = pd.read_csv("**your data set CSV goes here**")  
+df = pd.read_csv("data/**your data set CSV**")  
 # ⤷ Loads the synthetic clinical notes into a pandas DataFrame
 
 # 2. Clean the text
@@ -97,6 +98,7 @@ predict_urgency("Patient reports chest pain and shortness of breath.")
 # ⤷ Cleans and vectorizes the input text
 # ⤷ Uses the best trained model to predict the urgency class:
 #    EMERGENCY, URGENT, ROUTINE, or NON-URGENT
+
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
