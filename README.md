@@ -71,7 +71,7 @@ Main libraries used:
 Follow these steps to run the classifier from start to finish:
 
 ```python
-# 1. Load the dataset
+# 1. Load the dataset---> This is the only step the user needs to do, everything else is done by the models and pipeline
 import pandas as pd
 df = pd.read_csv("data/**your data set CSV**")  
 # ⤷ Loads the synthetic clinical notes into a pandas DataFrame
