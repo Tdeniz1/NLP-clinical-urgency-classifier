@@ -1,3 +1,6 @@
+import os
+st.write("Current files in working directory:")
+st.write(os.listdir())
 import streamlit as st
 import pandas as pd
 import numpy as np
