@@ -66,43 +66,6 @@ Main libraries used:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Usage
-
-Follow these steps to run the classifier from start to finish:
-
-```python
-# 1. Load the dataset---> This is the only step the user needs to do, everything else is done by the models and pipeline
-import pandas as pd
-df = pd.read_csv("data/**your data set CSV**")  
-# ⤷ Loads the synthetic clinical notes into a pandas DataFrame
-
-# 2. Clean the text
-from src.preprocessing import clean_text
-df['clean_text'] = df['text'].apply(clean_text)  
-# ⤷ Applies custom preprocessing:
-#    - Lowercasing
-#    - Removing punctuation and non-letter characters
-#    - Removing NLTK stopwords
-
-# 3. Train the model
-from src.train_model import train
-train(df)  
-# ⤷ Trains multiple models using TF-IDF features
-# ⤷ Evaluates test and cross-validation accuracy
-# ⤷ Calculates a composite score to rank models statistically
-# ⤷ Prints the best-performing model based on accuracy + stability
-
-# 4. Make a prediction on a new clinical note
-from src.predict import predict_urgency
-predict_urgency("Patient reports chest pain and shortness of breath.")  
-# ⤷ Cleans and vectorizes the input text
-# ⤷ Uses the best trained model to predict the urgency class:
-#    EMERGENCY, URGENT, ROUTINE, or NON-URGENT
-
-
-
-------------------------------------------------------------------------------------------------------------------------------------------------
-
 ## Sample Output
 
 ```
